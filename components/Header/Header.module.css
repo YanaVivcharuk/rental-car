@@ -1,0 +1,50 @@
+.header {
+  background-color: #f6f8fc;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  padding: 4px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--color-dark-blue);
+}
+
+.logo span {
+  color: var(--color-light-blue);
+}
+
+.nav ul {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav :global(a) {
+  text-decoration: none;
+  color: #232323;
+  font-size: 16px;
+  transition: color 0.25s ease;
+}
+
+.nav :global(a:hover) {
+  color: var(--color-light-blue);
+}
+
+.active {
+  color: var(--color-light-blue) !important;
+  font-weight: 600;
+}

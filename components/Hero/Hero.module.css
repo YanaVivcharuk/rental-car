@@ -1,0 +1,93 @@
+.section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    linear-gradient(
+      to bottom,
+      var(--opacity-neutral-darkest-20),
+      var(--opacity-neutral-darkest-20)
+    ),
+    url("/hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  margin-top: 436px;
+}
+
+.title {
+  font-family: var(--font-manrope), sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: -0.01em;
+  color: var(--color-white);
+  margin: 0 auto;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.description {
+  font-family: var(--font-manrope), sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--color-white);
+  margin-bottom: 40px;
+}
+
+.button {
+  font-family: var(--font-manrope), sans-serif;
+  display: block;
+  font-weight: 500;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-white);
+  background-color: var(--color-light-blue);
+  border: 1px solid var(--color-light-blue);
+  border-radius: 12px;
+  padding: 12px 88px;
+  width: 100%;
+  max-width: 276px;
+  height: auto;
+  min-height: 44px;
+  cursor: pointer;
+  margin: 0 auto;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--color-medium-blue);
+  border-color: var(--color-medium-blue);
+}
+
+.button:active {
+  opacity: 0.8;
+}
