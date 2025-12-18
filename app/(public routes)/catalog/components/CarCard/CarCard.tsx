@@ -30,14 +30,12 @@ export default function CarCard({ car, priority = false }: CarCardProps) {
   return (
     <li className={styles.card}>
       <div className={styles.imageWrapper}>
-        <Image
+        <img
           src={car.img}
           alt={`${car.description} ${car.model}`}
           width={274}
           height={268}
           className={styles.image}
-          priority={priority}
-          unoptimized
         />
         <button
           type="button"
