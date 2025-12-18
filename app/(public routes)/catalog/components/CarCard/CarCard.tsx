@@ -37,6 +37,7 @@ export default function CarCard({ car, priority = false }: CarCardProps) {
           height={268}
           className={styles.image}
           priority={priority}
+          unoptimized
         />
         <button
           type="button"
